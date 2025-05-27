@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>margin</title>
+</head>
+<body>
+   <header>
+   <div class="header">
+       <span>Home</span>
+      <span>
+         Back</span>
+         <span>Next</span>
+         <span>Out</span>
+</div>
+     </header>
+   
+<section class="content">
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus qui voluptate cum amet pariatur labore molestiae excepturi animi, quidem perspiciatis velit, quis perferendis corrupti modi, sed quibusdam! Ullam, ipsam!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, doloremque nostrum recusandae nihil provident earum deleniti explicabo eum officiis accusamus, et eos cumque animi, corrupti error illo veniam impedit dolor?</section>
+</body>
+
+<style>
+   body{
+      background-image: url(castle.jpg);
+   }
+
+
+.header{
+   display: flex;
+   background-image: url(fantasi2.jpg);
+   gap: 10px;
+   margin-top: 20%;
+   font-size: 17px;
+border: 3px solid ;
+}
+
+.header span:not(:last-child)::after{
+   content:"|";
+   margin-left: 30px;
+color:maroon;
+}
+
+.news{
+   background-color: greenyellow;
+}
+
+.content{
+   margin-top:40px;
+   text-align: justify;
+   background-image: url(map3.jpg);
+   padding: 30px;
+border: 3px solid;
+font-family:georgia, sans-serif;
+}
+
+
+</style>
+</html>
