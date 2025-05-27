@@ -7,17 +7,8 @@
    <title>margin</title>
 </head>
 <body>
-   <header>
-   <div class="header">
-       <span>Home</span>
-      <span>
-         Back</span>
-         <span>Next</span>
-         <span>Out</span>
-</div>
-     </header>
-   
 <section class="content">
+    <p class:"hidden-text">
   Yang Tersayang,  
 Tuan Putri Salsabila,
     
@@ -30,7 +21,7 @@ Andai daku seorang raja,
 akan kubangun istana dari bunga dan bintang,  
 hanya agar senyum itu tak pernah pudar.
 Dengan penuh kasih dan ketulusan,  
-Tuan Ksatria dari Kerajaan Hati
+Tuan Ksatria dari Kerajaan Hati</p>
 </section>
 </body>
 
@@ -49,26 +40,25 @@ Tuan Ksatria dari Kerajaan Hati
 border: 3px solid ;
 }
 
-.header span:not(:last-child)::after{
-   content:"|";
-   margin-left: 30px;
-color:maroon;
-}
-
-.news{
-   background-color: greenyellow;
-}
-
 .content{
-   margin-top:40px;
+ margin:auto;
    text-align: justify;
    background-image: url(map3.jpg);
-   padding: 30px;
+   padding:35px;
 border: 3px solid;
 font-family:georgia, sans-serif;
     font-size: 17px;
+    cursor:pointer;
+    
 }
 
+.hidden-text{
+      visibility:hidden;
+    opacity:0;
+    transition: 4s ease;
 
+.content:hover .hidden-text{
+        opacity: 1;
+    visibility: visible;
 </style>
 </html>
